@@ -11,11 +11,11 @@ import themehifi from "../../../../public/partiful/themehifi.png";
 
 export default function Partiful() {
   return (
-    <main className="px-48 py-24 c-column">
+    <main className="xs:px-48 lg:px-[120px] py-24 c-column">
       <SideLine text="Partiful" />
-      <p className="text-14 self-start"> Designing new, fun features for Gen Z&apos;s favorite party planning site </p>
-      <div className="l-column gap-24 max-w-[80vw] p-36">
-        <Image src={partiful} className="w-[800px] h-[500px] object-cover shadow rounded-lg self-center" alt="Old Partiful Home Page" />
+      <p className="text-14 self-start xs:mb-36 sm:mb-0"> Designing new, fun features for Gen Z&apos;s favorite party planning site </p>
+      <div className="l-column gap-24 max-w-[80vw] sm:p-36">
+        <Image src={partiful} className="shadow rounded-lg self-center" alt="Old Partiful event customization page" width={800} />
         <section className="l-column gap-14">
           <h2 className="text-20"> Overview </h2>
           <p className="text-14">
@@ -61,20 +61,20 @@ export default function Partiful() {
           <div className="text-14">
             When coming up with a design enabling users to add songs to their invites,
             I had 2 main considerations:
-            <ol className="pl-14">
+            <ol className="pl-24 list-decimal">
               <li>
-                1. A minimal, intuitive interface to search for, select, and trim a song.
+                A minimal, intuitive interface to search for, select, and trim a song.
               </li>
               <li>
-                2. A straightforward way to preview selected songs and change them if desired.
+                A straightforward way to preview selected songs and change them if desired.
               </li>
             </ol>
           </div>
           <p className="text-14"> After sketching for the first time, most of the team agreed on the actual flow of the modal itself, but disagreed on the placement of the “Add Song” button. </p>
 
-          <div className="row self-center gap-24">
-            <Image src={songsketch1} alt="Song sketch 1" className="w-[700px] h-[500px] object-cover shadow rounded-lg" />
-            <Image src={songsketch2} alt="Song sketch 2" className="w-[700px] h-[500px] object-cover shadow rounded-lg" />
+          <div className="row self-center gap-24 p-12 overflow-x-scroll">
+            <Image src={songsketch1} alt="Song sketch 1" className="shadow rounded-lg" height={400} />
+            <Image src={songsketch2} alt="Song sketch 2" className="shadow rounded-lg" height={400} />
           </div>
 
           <p className="text-14">
@@ -88,9 +88,9 @@ export default function Partiful() {
             and Partiful staff. Thus, iterating towards a final design was straightforward:
           </p>
 
-          <div className="row self-center gap-24">
-            <Image src={songlofi} alt="Song lo-fi" className="self-center w-[400px] h-[550px] object-cover shadow rounded-lg" />
-            <Image src={songhifi} alt="Song hi-fi" className="self-center w-[350px] h-[550px] object-cover shadow rounded-lg" />
+          <div className="row self-center gap-24 p-12 overflow-x-scroll">
+            <Image src={songlofi} alt="Song lo-fi" className="self-center shadow rounded-lg" height={600} />
+            <Image src={songhifi} alt="Song hi-fi" className="self-center shadow rounded-lg" height={600} />
           </div>
 
           <p className="text-14">
@@ -114,7 +114,7 @@ export default function Partiful() {
             customization: custom color or gradient backgrounds, and AI generated themes.
           </p>
 
-          <Image src={themesketch} alt="Theme sketch" className="w-[650px] h-[550px] object-cover shadow rounded-lg self-center" />
+          <Image src={themesketch} alt="Theme sketch" className="m-12 shadow rounded-lg self-center" width={550} />
 
           <p className="text-14"> Unfortunately, my ideas this time around garnered less approval – other teammates and a few Partiful members leaned in the opposite direction, preferring to limit user flexibility. </p>
 
@@ -124,7 +124,7 @@ export default function Partiful() {
             highly customizable interface:
           </p>
 
-          <Image src={themehifi} alt="Theme hifi" className="w-[700px] h-[500px] object-cover shadow rounded-lg self-center" />
+          <Image src={themehifi} alt="Theme hifi" className="m-12 shadow rounded-lg self-center" width={700} />
 
           <p className="text-14">
             By only providing a hue slider, users aren’t able to use background images that weren’t

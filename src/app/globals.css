@@ -10,6 +10,7 @@ html {
   --darker-blue: rgba(11,20,25);
   --dark-green: rgba(48,62,49);
   --off-white: rgba(234,230,229);
+  --aqua: rgb(0, 230, 220);
 
   --c-scrollbar: rgba(161,161,161,0.5);
   --c-scrollbar-hover: rgba(186,186,186,0.5);
@@ -22,8 +23,9 @@ body {
 }
 
 /* set scrollabar to look good on dark background */
-::-webkit-scrollbar, ::-webkit-scrollbar:horizontal {
+::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
 }
 ::-webkit-scrollbar-track, ::-webkit-scrollbar-corner {
   background: var(--darker-blue);
@@ -110,8 +112,19 @@ body {
 
 /* background colors */
 .bg-dark-green {
-  background-color: var(--dark-green);
+  background-color: var(--darker-blue);
 }
 .bg-off-white {
   background-color: var(--off-white);
+}
+
+/* text colors */
+.text-aqua {
+  color: var(--aqua);
+}
+.tj-logo, footer {
+  transition: color 0.1s linear;
+}
+.tj-logo:hover, footer:hover {
+  color: var(--aqua);
 }

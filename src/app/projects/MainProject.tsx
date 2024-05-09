@@ -22,7 +22,7 @@ export default function MainProject({
   return (
     <a className="l-column" href={href}>
       <div className="bg-off-white rounded-lg">
-        <Image src={imagesMap[src]} className="object-cover shadow rounded-lg transition hover:opacity-90" alt={`Featured project image for ${title}`} />
+        <Image src={imagesMap[src]} className="shadow rounded-lg transition hover:opacity-90" alt={`Featured project image for ${title}`} />
       </div>
       <figcaption className="p-14">
         <h1 className="text-20">

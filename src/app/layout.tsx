@@ -19,7 +19,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en">
       <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-        <script src="https://kit.fontawesome.com/35850cf6ad.js" async />
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script src="https://kit.fontawesome.com/35850cf6ad.js" />
       </head>
 
       <body className={quattrocentoSans.className}>

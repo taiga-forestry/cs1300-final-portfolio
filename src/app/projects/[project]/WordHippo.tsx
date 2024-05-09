@@ -8,14 +8,14 @@ import phonehifi from "../../../../public/wordhippo/phonehifi.png";
 
 export default function WordHippo() {
   return (
-    <main className="px-48 py-24 c-column">
+    <main className="xs:px-48 lg:px-[120px] py-24 c-column">
       <SideLine text="Word Hippo" />
-      <p className="text-14 self-start">
+      <p className="text-14 self-start xs:mb-36 sm:mb-0">
         Redesigning the internet&apos;s favorite thesaurus for improved usability and accessibility
       </p>
 
-      <div className="l-column gap-24 max-w-[80vw] p-36">
-        <Image src={wordhippo} alt="" className="w-[700px] h-[525px] object-cover shadow rounded-lg self-center" />
+      <div className="l-column gap-24 max-w-[80vw] sm:p-36">
+        <Image src={wordhippo} alt="Old Word Hippo home page" className="shadow rounded-lg self-center" width={800} />
         <div className="l-column gap-14">
           <h2 className="text-20"> Overview </h2>
           <p className="text-14">
@@ -42,25 +42,25 @@ export default function WordHippo() {
           <div className="grid grid-cols-2 gap-24 text-14">
             <div>
               Usability
-              <ol className="pl-14">
-                <li> 1. Arrow icons and other buttons are ambiguous and thus hard to use. </li>
-                <li> 2. Shrinking the window (e.g. to split screen with Gmail) cuts off text. </li>
-                <li> 3. The &quot;Contexts&quot; dropdown does not seem clickable. </li>
-                <li> 4. Main search bar is too small, and other search bars clutter the site. </li>
+              <ol className="pl-24 list-decimal">
+                <li> Arrow icons and other buttons are ambiguous and thus hard to use. </li>
+                <li> Shrinking the window (e.g. to split screen with Gmail) cuts off text. </li>
+                <li> The &quot;Contexts&quot; dropdown does not seem clickable. </li>
+                <li> Main search bar is too small, and other search bars clutter the site. </li>
               </ol>
             </div>
 
             <div>
               Accessibility
-              <ol className="pl-14">
+              <ol className="pl-24 list-decimal">
                 <li>
-                  1. Many form labels are missing, so using a screen reader is more challenging.
+                  Many form labels are missing, so using a screen reader is more challenging.
                 </li>
                 <li>
-                  2. Lots of miscellaneous issues (e.g. extraneous tab indexes), which
+                  Lots of miscellaneous issues (e.g. extraneous tab indexes), which
                   complicate keyboard navigation.
                 </li>
-                <li> 3. Less importantly, but all Hippos lack alt texts! </li>
+                <li> Less importantly, but all Hippos lack alt texts! </li>
               </ol>
             </div>
           </div>
@@ -79,22 +79,22 @@ export default function WordHippo() {
             some aspects of the interface were so unintuitive.
           </p>
 
-          <p className="text-14">
+          <div className="text-14">
             For instance, for the currently existing “up arrow” icon, I identified that:
-            <ol className="pl-14">
+            <ol className="pl-24 list-decimal">
               <li>
-                1. Compared to other websites, an icon in that position would generally indicate
+                Compared to other websites, an icon in that position would generally indicate
                 a dropdown of some sort – it was rare to see websites that have a button simply
                 to scroll to the top of a page fixed on each block of text.
               </li>
               <li>
-                2. The small icon size, combined with a lack of hover effects and identical color
+                The small icon size, combined with a lack of hover effects and identical color
                 to surrounding text, makes it difficult for users to realize that it was clickable.
               </li>
             </ol>
-          </p>
+          </div>
 
-          <Image src={badarrowicon} alt="" className="w-[650px] h-[300px] object-cover shadow rounded-lg self-center" />
+          <Image src={badarrowicon} alt="Example of bad up arrow icon" className="p-12shadow rounded-lg self-center" width={700} />
 
           <p className="text-14">
             To fix this, I changed the functionality of the icon to open/collapse the synonyms for
@@ -102,7 +102,7 @@ export default function WordHippo() {
             clickable with a more standard shape and color.
           </p>
 
-          <Image src={goodarrowicon} alt="" className="w-[650px] h-[200px] object-cover shadow rounded-lg self-center" />
+          <Image src={goodarrowicon} alt="Example of revised up arrow icon" className="p-12shadow rounded-lg self-center" width={700} />
 
           <p className="text-14">
             Similarly, the small size and lack of effects on the “Contexts” dropdown also
@@ -128,13 +128,13 @@ export default function WordHippo() {
             I settled on the final product:
           </p>
 
-          <div className="row gap-24 self-center">
-            <Image src={laptophifi} alt="" className="w-[675px] h-[550px] object-cover shadow rounded-lg self-center" />
-            <Image src={phonehifi} alt="" className="w-[175px] h-[550px] object-cover shadow rounded-lg self-center" />
+          <div className="row p-12 gap-24 self-center overflow-x-scroll">
+            <Image src={laptophifi} alt="Hifi of new Word Hippo page on laptop screen" className="shadow rounded-lg self-center" height={500} />
+            <Image src={phonehifi} alt="Hifi of new Word Hippo page on phone screen" className="shadow rounded-lg self-center" height={500} />
           </div>
 
           <p className="text-14">
-            From the image above, it&apos;s clear that the largest usability and responsiveness
+            From the images above, it&apos;s clear that the largest usability and responsiveness
             issues have mostly been addressed. With more discoverable and intuitive icons,
             as well as a reasonable interface on smaller screen sizes, the
             new Word Hippo should provide an improved UX going forward.
