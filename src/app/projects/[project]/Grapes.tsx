@@ -84,11 +84,6 @@ export default function Grapes() {
 
           <Image src={nodes} className="rounded self-center m-12" alt="Diagram of Figma nodes" width={600} />
 
-          <div className="row self-center gap-24">
-            {/* <Image src={songsketch1} alt="Song sketch 1" className="w-[700px] h-[500px]shadow rounded-lg" /> */}
-            {/* <Image src={songsketch2} alt="Song sketch 2" className="w-[700px] h-[500px]shadow rounded-lg" /> */}
-          </div>
-
           <p className="text-14">
             Thus, creating this translation layer between Figma’s Plugin API to GrapesJS
             was now a matter of learning which syntax represented the same item in both systems.
@@ -104,11 +99,6 @@ export default function Grapes() {
             Rectangles. Then, I developed a recursive algorithm to systematically parse the entire
             Figma tree, reconstructing each Node as a GrapesJS block at each step.
           </p>
-
-          <div className="row self-center gap-24">
-            {/* <Image src={songlofi} alt="Song lo-fi" className="self-center w-[400px] h-[550px]shadow rounded-lg" /> */}
-            {/* <Image src={songhifi} alt="Song hi-fi" className="self-center w-[350px] h-[550px]shadow rounded-lg" /> */}
-          </div>
         </section>
         <Separator />
 
@@ -138,8 +128,6 @@ export default function Grapes() {
             that GrapesJS might not support, then designers might also be frustrated that once
             loaded into Braze’s editor, the final result might not resemble their work in Figma.
           </p>
-
-          {/* <Image src={themehifi} alt="Theme hifi" className="w-[700px] h-[500px]shadow rounded-lg self-center" /> */}
 
           <div className="text-14">
             In the end, I decided to categorize most issues as either minor or major depending
