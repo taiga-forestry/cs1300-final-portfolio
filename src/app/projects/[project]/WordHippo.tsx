@@ -128,7 +128,7 @@ export default function WordHippo() {
             I settled on the final product:
           </p>
 
-          <div className="row p-12 gap-24 self-center overflow-x-scroll">
+          <div className="row p-12 gap-24 self-center overflow-x-auto">
             <Image src={laptophifi} alt="Hifi of new Word Hippo page on laptop screen" className="shadow rounded-lg self-center" height={500} />
             <Image src={phonehifi} alt="Hifi of new Word Hippo page on phone screen" className="shadow rounded-lg self-center" height={500} />
           </div>

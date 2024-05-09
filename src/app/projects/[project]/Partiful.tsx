@@ -72,7 +72,7 @@ export default function Partiful() {
           </div>
           <p className="text-14"> After sketching for the first time, most of the team agreed on the actual flow of the modal itself, but disagreed on the placement of the “Add Song” button. </p>
 
-          <div className="row self-center gap-24 p-12 overflow-x-scroll">
+          <div className="row self-center gap-24 p-12 overflow-x-auto">
             <Image src={songsketch1} alt="Song sketch 1" className="shadow rounded-lg" height={400} />
             <Image src={songsketch2} alt="Song sketch 2" className="shadow rounded-lg" height={400} />
           </div>
@@ -88,7 +88,7 @@ export default function Partiful() {
             and Partiful staff. Thus, iterating towards a final design was straightforward:
           </p>
 
-          <div className="row self-center gap-24 p-12 overflow-x-scroll">
+          <div className="row self-center gap-24 p-12 overflow-x-auto">
             <Image src={songlofi} alt="Song lo-fi" className="self-center shadow rounded-lg" height={600} />
             <Image src={songhifi} alt="Song hi-fi" className="self-center shadow rounded-lg" height={600} />
           </div>
