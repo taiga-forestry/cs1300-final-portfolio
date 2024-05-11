@@ -1,4 +1,4 @@
-import Image from "next/image";
+import LabeledImage from "@/app/(components)/image/LabeledImage";
 import SideLine from "@/app/(components)/line/SideLine";
 import wordhippo from "../../../../public/wordhippo/wordhippo.png";
 import badarrowicon from "../../../../public/wordhippo/badarrowicon.png";
@@ -15,7 +15,9 @@ export default function WordHippo() {
       </p>
 
       <div className="l-column gap-24 max-w-[80vw] sm:p-36">
-        <Image src={wordhippo} alt="Old Word Hippo home page" className="shadow rounded-lg self-center" width={800} />
+        <div className="self-center">
+          <LabeledImage src={wordhippo} alt="Old Word Hippo home page" label="Currently existing Word Hippo page" className="shadow rounded-lg" width={800} />
+        </div>
         <div className="l-column gap-14">
           <h2 className="text-20"> Overview </h2>
           <p className="text-14">
@@ -94,7 +96,9 @@ export default function WordHippo() {
             </ol>
           </div>
 
-          <Image src={badarrowicon} alt="Example of bad up arrow icon" className="p-12shadow rounded-lg self-center" width={700} />
+          <div className="self-center">
+            <LabeledImage src={badarrowicon} alt="Example of bad up arrow icon" label="Example of bad up arrow icon" className="p-12shadow rounded-lg self-center" width={700} />
+          </div>
 
           <p className="text-14">
             To fix this, I changed the functionality of the icon to open/collapse the synonyms for
@@ -102,7 +106,9 @@ export default function WordHippo() {
             clickable with a more standard shape and color.
           </p>
 
-          <Image src={goodarrowicon} alt="Example of revised up arrow icon" className="p-12shadow rounded-lg self-center" width={700} />
+          <div className="self-center">
+            <LabeledImage src={goodarrowicon} label="Example of revised up arrow icon" alt="Example of revised up arrow icon" className="p-12shadow rounded-lg self-center" width={700} />
+          </div>
 
           <p className="text-14">
             Similarly, the small size and lack of effects on the “Contexts” dropdown also
@@ -129,8 +135,8 @@ export default function WordHippo() {
           </p>
 
           <div className="row p-12 gap-24 self-center overflow-x-auto">
-            <Image src={laptophifi} alt="Hifi of new Word Hippo page on laptop screen" className="shadow rounded-lg self-center" height={500} />
-            <Image src={phonehifi} alt="Hifi of new Word Hippo page on phone screen" className="shadow rounded-lg self-center" height={500} />
+            <LabeledImage src={laptophifi} label="High-fidelity prototype of new Word Hippo page on laptop screen" alt="Hifi of new Word Hippo page on laptop screen" className="shadow rounded-lg self-center" height={500} />
+            <LabeledImage src={phonehifi} label="High-fidelity prototype of new Word Hippo page on laptop screen" alt="Hifi of new Word Hippo page on phone screen" className="shadow rounded-lg self-center" height={500} />
           </div>
 
           <p className="text-14">

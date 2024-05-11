@@ -1,4 +1,4 @@
-import Image from "next/image";
+import LabeledImage from "@/app/(components)/image/LabeledImage";
 import SideLine from "@/app/(components)/line/SideLine";
 import Separator from "@/app/(components)/line/Separator";
 import grapes from "../../../../public/grapes/grapes.png";
@@ -9,10 +9,13 @@ import assets from "../../../../public/grapes/assets.png";
 export default function Grapes() {
   return (
     <main className="xs:px-48 lg:px-[120px] py-24 c-column">
-      <SideLine text="Figma Grapes Editor" />
+      <SideLine text="Figma Grapes Exporter" />
       <p className="text-14 self-start xs:mb-36 sm:mb-0"> Streamlining marketing campaigns via Figma-to-Braze Integrations </p>
       <div className="l-column gap-24 max-w-[80vw] sm:p-36">
-        <Image src={grapes} className="rounded-lg self-center" alt="Old Partiful Home Page" width={800} />
+        <div className="self-center">
+          <LabeledImage src={grapes} className="rounded-lg self-center" label="Example of someone using the Figma Grapes Exporter plugin" alt="Example of someone using the Figma Grapes Exporter plugin" width={800} />
+        </div>
+
         <section className="l-column gap-14">
           <h2 className="text-20"> Overview </h2>
           <p className="text-14">
@@ -82,7 +85,9 @@ export default function Grapes() {
             idea of representing designs through trees was the same.
           </p>
 
-          <Image src={nodes} className="rounded self-center m-12" alt="Diagram of Figma nodes" width={600} />
+          <div className="self-center m-12">
+            <LabeledImage src={nodes} className="rounded-lg" alt="Diagram of Figma nodes" label="Diagram of the underlying Figma document tree" width={600} />
+          </div>
 
           <p className="text-14">
             Thus, creating this translation layer between Figma’s Plugin API to GrapesJS
@@ -117,7 +122,9 @@ export default function Grapes() {
             can only have a uniform border radius.
           </p>
 
-          <Image src={wysiwyg} className="rounded self-center m-12" alt="Screenshot of Braze drag-and-drop editor" width={650} />
+          <div className="self-center m-12">
+            <LabeledImage src={wysiwyg} className="rounded-lg" label="Braze's current drag-and-drop editor" alt="Screenshot of Braze drag-and-drop editor" width={650} />
+          </div>
 
           <p className="text-14">
             The biggest challenge to handle these wasn’t just technical, but also design-related –
@@ -175,7 +182,9 @@ export default function Grapes() {
             as they please.
           </p>
 
-          <Image src={assets} className="rounded self-center m-12" alt="Screenshot of Braze drag-and-drop editor" width={650} />
+          <div className="self-center m-12">
+            <LabeledImage src={assets} className="rounded-lg" alt="Diagram of overall export/import process" label="Diagram summarizing the export/import process" width={650} />
+          </div>
 
           <p className="text-14">
             To handle the integration with the media library, I implemented an extra deserialization

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import LabeledImage from "@/app/(components)/image/LabeledImage";
 import SideLine from "@/app/(components)/line/SideLine";
 import Separator from "@/app/(components)/line/Separator";
 import partiful from "../../../../public/partiful/partiful.png";
@@ -15,7 +15,16 @@ export default function Partiful() {
       <SideLine text="Partiful" />
       <p className="text-14 self-start xs:mb-36 sm:mb-0"> Designing new, fun features for Gen Z&apos;s favorite party planning site </p>
       <div className="l-column gap-24 max-w-[80vw] sm:p-36">
-        <Image src={partiful} className="shadow rounded-lg self-center" alt="Old Partiful event customization page" width={800} />
+        <div className="self-center">
+          <LabeledImage
+            src={partiful}
+            className="shadow rounded-lg"
+            alt="Old Partiful event customization page"
+            label="Partiful's existing event customization page"
+            width={800}
+          />
+        </div>
+
         <section className="l-column gap-14">
           <h2 className="text-20"> Overview </h2>
           <p className="text-14">
@@ -73,8 +82,20 @@ export default function Partiful() {
           <p className="text-14"> After sketching for the first time, most of the team agreed on the actual flow of the modal itself, but disagreed on the placement of the “Add Song” button. </p>
 
           <div className="row self-center gap-24 p-12 overflow-x-auto">
-            <Image src={songsketch1} alt="Song sketch 1" className="shadow rounded-lg" height={400} />
-            <Image src={songsketch2} alt="Song sketch 2" className="shadow rounded-lg" height={400} />
+            <LabeledImage
+              src={songsketch1}
+              className="rounded-lg"
+              alt="Song sketch 1"
+              label="One sketch for the song feature"
+              height={400}
+            />
+            <LabeledImage
+              src={songsketch2}
+              className="rounded-lg"
+              alt="Song sketch 2"
+              label="Another set of sketches for the song feature"
+              height={400}
+            />
           </div>
 
           <p className="text-14">
@@ -89,8 +110,20 @@ export default function Partiful() {
           </p>
 
           <div className="row self-center gap-24 p-12 overflow-x-auto">
-            <Image src={songlofi} alt="Song lo-fi" className="self-center shadow rounded-lg" height={600} />
-            <Image src={songhifi} alt="Song hi-fi" className="self-center shadow rounded-lg" height={600} />
+            <LabeledImage
+              src={songlofi}
+              className="self-center rounded-lg"
+              alt="Song lofi"
+              label="Low-fidelity prototype of the new song feature"
+              height={600}
+            />
+            <LabeledImage
+              src={songhifi}
+              className="self-center rounded-lg"
+              alt="Song hifi"
+              label="High-fidelity prototype of the new song feature"
+              height={600}
+            />
           </div>
 
           <p className="text-14">
@@ -114,17 +147,21 @@ export default function Partiful() {
             customization: custom color or gradient backgrounds, and AI generated themes.
           </p>
 
-          <Image src={themesketch} alt="Theme sketch" className="m-12 shadow rounded-lg self-center" width={550} />
+          <div className="self-center m-12">
+            <LabeledImage src={themesketch} alt="Theme sketch" className="shadow rounded-lg self-center" label="Sketches for gradient and AI theme customization" width={550} />
+          </div>
 
           <p className="text-14"> Unfortunately, my ideas this time around garnered less approval – other teammates and a few Partiful members leaned in the opposite direction, preferring to limit user flexibility. </p>
 
           <p className="text-14">
             After testing a few other possibilities and debating between them, we decided to scrap
-            the entirety of the. With the help of my team, we came up with a simpler, yet still
-            highly customizable interface:
+            the entirety of the AI and gradient theme genrators. With the help of my team, we
+            came up with a simpler, yet still highly customizable interface:
           </p>
 
-          <Image src={themehifi} alt="Theme hifi" className="m-12 shadow rounded-lg self-center" width={700} />
+          <div className="self-center m-12">
+            <LabeledImage src={themehifi} alt="Theme hifi" className="shadow rounded-lg self-center" label="High-fidelity prototype of new hue slides" width={700} />
+          </div>
 
           <p className="text-14">
             By only providing a hue slider, users aren’t able to use background images that weren’t
